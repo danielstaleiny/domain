@@ -1,0 +1,41 @@
+{
+  "name": "domain-mono-repo",
+  "version": "1.0.0",
+  "description": "Mono-repo to manage multiple sites.",
+  "main": "index.js",
+  "scripts": {
+    "glob-dep:dev:sk": "nodemon ./domain-sk",
+    "glob-dep:dev:cz": "nodemon ./domain-cz",
+    "glob-dep:dev:pl": "nodemon ./domain-pl",
+    "glob-dep:prod:sk": "NODE_ENV=production node ./domain-sk",
+    "glob-dep:prod:cz": "NODE_ENV=production node ./domain-cz",
+    "glob-dep:prod:pl": "NODE_ENV=production node ./domain-pl",
+    "dev:sk": "cd ./domain-sk && npm run dev",
+    "dev:cz": "cd ./domain-cz && npm run dev",
+    "dev:pl": "cd ./domain-pl && npm run dev",
+    "prod:sk": "cd .domain-sk && npm run prod",
+    "prod:cz": "cd .domain-cz && npm run prod",
+    "prod:pl": "cd .domain-pl && npm run prod",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielstaleiny/domain.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielstaleiny/domain/issues"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "printWidth": 80
+  },
+  "homepage": "https://github.com/danielstaleiny/domain#readme",
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  }
+}

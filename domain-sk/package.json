@@ -1,0 +1,13 @@
+{
+  "name": "domain-sk",
+  "version": "1.0.0",
+  "description": "Mono-repo to manage multiple sites.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "prod": "NODE_ENV=production node .",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT"
+}
